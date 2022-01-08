@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CResumableCombineHelpers-iOS/CResumableCombineHelpers.framework
+${BUILT_PRODUCTS_DIR}/Quick-iOS/Quick.framework
+${BUILT_PRODUCTS_DIR}/Nimble-iOS/Nimble.framework

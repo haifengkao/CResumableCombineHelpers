@@ -1,0 +1,29 @@
+PODS:
+  - CResumableCombineHelpers (0.1.0)
+  - CResumableCombineHelpers/Tests (0.1.0):
+    - Nimble
+    - Quick
+  - Nimble (9.2.1)
+  - Quick (4.0.0)
+
+DEPENDENCIES:
+  - CResumableCombineHelpers (from `../`)
+  - CResumableCombineHelpers/Tests (from `../`)
+
+EXTERNAL SOURCES:
+  CResumableCombineHelpers:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CResumableCombineHelpers: 8c79bd790d3bc27f98496262fe15ade6ed87252b
+  Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
+  Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
+
+COCOAPODS: 1.11.2
+
+PODFILE CHECKSUM: 63bb64e9725381518a5d2144c9a029194e32e70b
+
+SPEC REPOS:
+  trunk:
+    - Nimble
+    - Quick

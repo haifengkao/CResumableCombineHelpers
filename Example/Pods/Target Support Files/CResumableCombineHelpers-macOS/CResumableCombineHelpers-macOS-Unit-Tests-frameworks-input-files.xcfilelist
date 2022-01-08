@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CResumableCombineHelpers-macOS/CResumableCombineHelpers.framework
+${BUILT_PRODUCTS_DIR}/Quick-macOS/Quick.framework
+${BUILT_PRODUCTS_DIR}/Nimble-macOS/Nimble.framework

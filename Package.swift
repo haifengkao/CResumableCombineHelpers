@@ -29,11 +29,11 @@ let package = Package(
             name: "CResumableCombineHelpers",
             dependencies: []
         ),
-        .target(
-            name: "CResumableCombineHelpersExample",
-            dependencies: ["CResumableCombineHelpers"],
-            path: "Example/Shared"
-        ),
+        // .target(
+        //     name: "CResumableCombineHelpersExample",
+        //     dependencies: ["CResumableCombineHelpers"],
+        //     path: "Example/Shared"
+        // ),
         .testTarget(
             name: "CResumableCombineHelpersTests",
             dependencies: [
@@ -42,5 +42,6 @@ let package = Package(
                 "Nimble",
             ]
         ),
-    ]
+    ],
+    cxxLanguageStandard: .cxx11
 )
