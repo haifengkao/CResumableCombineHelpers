@@ -1,6 +1,6 @@
 {
   "name": "CResumableCombineHelpers",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "summary": "C++ helper methods for ResumableCombine",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/haifengkao/CResumableCombineHelpers",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/haifengkao/CResumableCombineHelpers.git",
-    "tag": "0.2.0"
+    "tag": "0.3.0"
   },
   "platforms": {
     "ios": "14.0",

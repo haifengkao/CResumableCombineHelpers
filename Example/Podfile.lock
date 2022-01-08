@@ -1,6 +1,6 @@
 PODS:
-  - CResumableCombineHelpers (0.2.0)
-  - CResumableCombineHelpers/Tests (0.2.0):
+  - CResumableCombineHelpers (0.3.0)
+  - CResumableCombineHelpers/Tests (0.3.0):
     - Nimble
     - Quick
   - Nimble (9.2.1)
@@ -17,7 +17,7 @@ EXTERNAL SOURCES:
 CHECKOUT OPTIONS: 
 
 SPEC CHECKSUMS:
-  CResumableCombineHelpers: 2d96bc513b090ad5c431e36f39eccf6463faff3e
+  CResumableCombineHelpers: 5c2b50f264f45b28b67c29312ab1681793ef7df6
   Nimble: e7e615c0335ee4bf5b0d786685451e62746117d5
   Quick: 6473349e43b9271a8d43839d9ba1c442ed1b7ac4
 
