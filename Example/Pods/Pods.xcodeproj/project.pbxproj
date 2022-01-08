@@ -1699,47 +1699,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0F75AA41DEF9E873C776E182526EB3D1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFEF653552AF2F380E3F25F44C95346C /* CResumableCombineHelpers-macOS.unit-tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = "CResumableCombineHelpers-macOS-Unit-Tests";
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-			};
-			name = Debug;
-		};
-		316FE68EE538EF3C8DBCFCF4195633F8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F0536C305B07C0B6BE49DA99A3ED2A5 /* CResumableCombineHelpers-iOS.unit-tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = YES;
-				CODE_SIGNING_REQUIRED = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-Info.plist";
-				PRODUCT_NAME = "CResumableCombineHelpers-iOS-Unit-Tests";
-				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-			};
-			name = Debug;
-		};
 		48590959E25630949C73DBEAB39E27F5 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9ABD761081B985C4B88EC31B86FE4170 /* Quick-iOS.release.xcconfig */;
@@ -1845,39 +1804,26 @@
 			};
 			name = Release;
 		};
-		63381A6268585A7C644509DDC7FE95F2 /* Debug */ = {
+		6022E5ADBA26AA0F5E2A56D22E43A55D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C591503C1096E97C89A07A740BF30422 /* CResumableCombineHelpers-iOS.debug.xcconfig */;
+			baseConfigurationReference = 68B817B849A26D52D6998B3EB1D314FF /* CResumableCombineHelpers-macOS.unit-tests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS.modulemap";
-				PRODUCT_MODULE_NAME = CResumableCombineHelpers;
-				PRODUCT_NAME = CResumableCombineHelpers;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "CResumableCombineHelpers-macOS-Unit-Tests";
+				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		79E6A7D98F5272C8243DE51854DE97F5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1911,6 +1857,28 @@
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8A8E82E8210D910E45E326BA7434A503 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F73C239364204A977F550B0B79C88535 /* CResumableCombineHelpers-iOS.unit-tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-Info.plist";
+				PRODUCT_NAME = "CResumableCombineHelpers-iOS-Unit-Tests";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
@@ -1974,41 +1942,6 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Release;
-		};
-		94A3800E5EC8A9DB99A5CC9DC75220FC /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D28824CD9DC2EF25A9FC4A178781B787 /* CResumableCombineHelpers-iOS.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS.modulemap";
-				PRODUCT_MODULE_NAME = CResumableCombineHelpers;
-				PRODUCT_NAME = CResumableCombineHelpers;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -2116,6 +2049,27 @@
 			};
 			name = Debug;
 		};
+		9C9434CA4D2AEB7B9667607C2715023D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFEF653552AF2F380E3F25F44C95346C /* CResumableCombineHelpers-macOS.unit-tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_NAME = "CResumableCombineHelpers-macOS-Unit-Tests";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+			};
+			name = Debug;
+		};
 		9F10672378D26AE15B83FDF0064E56BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F029452A08FB543DCE6BEFCEC98D4872 /* Quick-iOS.debug.xcconfig */;
@@ -2143,6 +2097,42 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A521CA8BD64608D0320A18171BC1BDFF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2107F0583E0F6C76F076E515B63B4E7F /* CResumableCombineHelpers-macOS.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS.modulemap";
+				PRODUCT_MODULE_NAME = CResumableCombineHelpers;
+				PRODUCT_NAME = CResumableCombineHelpers;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -2177,6 +2167,27 @@
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B61C7473C18720118F56A3158DCB34D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F0536C305B07C0B6BE49DA99A3ED2A5 /* CResumableCombineHelpers-iOS.unit-tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-Info.plist";
+				PRODUCT_NAME = "CResumableCombineHelpers-iOS-Unit-Tests";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
 			};
 			name = Debug;
 		};
@@ -2215,25 +2226,39 @@
 			};
 			name = Debug;
 		};
-		BA4FDDDB29C97EF10FA394C99A2223CA /* Release */ = {
+		BCA99A8CFD213781F70D51D44BC6EDF5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F73C239364204A977F550B0B79C88535 /* CResumableCombineHelpers-iOS.unit-tests.release.xcconfig */;
+			baseConfigurationReference = B841E6C536D3BE83E7458133CADDC2F6 /* CResumableCombineHelpers-macOS.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGNING_ALLOWED = YES;
-				CODE_SIGNING_REQUIRED = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Unit-Tests-Info.plist";
-				PRODUCT_NAME = "CResumableCombineHelpers-iOS-Unit-Tests";
-				SDKROOT = iphoneos;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS.modulemap";
+				PRODUCT_MODULE_NAME = CResumableCombineHelpers;
+				PRODUCT_NAME = CResumableCombineHelpers;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5;
-				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -2273,60 +2298,39 @@
 			};
 			name = Debug;
 		};
-		CD46B00BAA2A4FBD217525EF9C5967C5 /* Release */ = {
+		D476A673F0936B71D13A134A1E4F5364 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 68B817B849A26D52D6998B3EB1D314FF /* CResumableCombineHelpers-macOS.unit-tests.release.xcconfig */;
+			baseConfigurationReference = C591503C1096E97C89A07A740BF30422 /* CResumableCombineHelpers-iOS.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CODE_SIGN_IDENTITY = "";
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Unit-Tests-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				PRODUCT_NAME = "CResumableCombineHelpers-macOS-Unit-Tests";
-				SDKROOT = macosx;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-			};
-			name = Release;
-		};
-		D38828F6CC0A93AA53C4C48A98A43575 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = B841E6C536D3BE83E7458133CADDC2F6 /* CResumableCombineHelpers-macOS.release.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS.modulemap";
+				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS.modulemap";
 				PRODUCT_MODULE_NAME = CResumableCombineHelpers;
 				PRODUCT_NAME = CResumableCombineHelpers;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D84E712004B389634042DF9B7DD73110 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2360,41 +2364,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		D94828A4B8899426D98770448DB3FFFA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2107F0583E0F6C76F076E515B63B4E7F /* CResumableCombineHelpers-macOS.debug.xcconfig */;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
-				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-macOS/CResumableCombineHelpers-macOS.modulemap";
-				PRODUCT_MODULE_NAME = CResumableCombineHelpers;
-				PRODUCT_NAME = CResumableCombineHelpers;
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		E2880BDC0ACC477E886F072910B5F64E /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2468,14 +2437,49 @@
 			};
 			name = Release;
 		};
+		F104E1046A6E15441E7CBA86FE742823 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D28824CD9DC2EF25A9FC4A178781B787 /* CResumableCombineHelpers-iOS.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CResumableCombineHelpers-iOS/CResumableCombineHelpers-iOS.modulemap";
+				PRODUCT_MODULE_NAME = CResumableCombineHelpers;
+				PRODUCT_NAME = CResumableCombineHelpers;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
 		00DE375EF0C68C5683F153D67928DDAD /* Build configuration list for PBXNativeTarget "CResumableCombineHelpers-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				63381A6268585A7C644509DDC7FE95F2 /* Debug */,
-				94A3800E5EC8A9DB99A5CC9DC75220FC /* Release */,
+				D476A673F0936B71D13A134A1E4F5364 /* Debug */,
+				F104E1046A6E15441E7CBA86FE742823 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2510,8 +2514,8 @@
 		48BF6D22C8C0B84FEA92DA97147EFCB7 /* Build configuration list for PBXNativeTarget "CResumableCombineHelpers-macOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D94828A4B8899426D98770448DB3FFFA /* Debug */,
-				D38828F6CC0A93AA53C4C48A98A43575 /* Release */,
+				A521CA8BD64608D0320A18171BC1BDFF /* Debug */,
+				BCA99A8CFD213781F70D51D44BC6EDF5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2519,8 +2523,8 @@
 		4D002C3460F63EB2F7081E76D6505793 /* Build configuration list for PBXNativeTarget "CResumableCombineHelpers-iOS-Unit-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				316FE68EE538EF3C8DBCFCF4195633F8 /* Debug */,
-				BA4FDDDB29C97EF10FA394C99A2223CA /* Release */,
+				B61C7473C18720118F56A3158DCB34D9 /* Debug */,
+				8A8E82E8210D910E45E326BA7434A503 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2555,8 +2559,8 @@
 		AFDC88A8BBAF0AB999ED32960185384A /* Build configuration list for PBXNativeTarget "CResumableCombineHelpers-macOS-Unit-Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0F75AA41DEF9E873C776E182526EB3D1 /* Debug */,
-				CD46B00BAA2A4FBD217525EF9C5967C5 /* Release */,
+				9C9434CA4D2AEB7B9667607C2715023D /* Debug */,
+				6022E5ADBA26AA0F5E2A56D22E43A55D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
